@@ -1,5 +1,6 @@
 import "./App.css";
-import { Layout } from "./componentsLayout/Layout.jsx";
+import { Layout } from "./components/Layout/Layout";
+
 import { Navbar } from "./components/Navbar/Navbar";
 import { Routes } from "./components/Routes/Routes";
 
