@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Squares } from "./Squares";
+import { HowWorks } from "./HowWorks";
 
 export const Home = () => {
+  const [visible,setVisible] =useState(false)
   return (
-    <Container>
+    <>    <Container>
       <Title>I THINK YOUR BUSINESS FIND SEO SOLUTION...</Title>
       <Squares />
       <Para>
@@ -13,9 +15,12 @@ export const Home = () => {
       </Para>
       <ButtContainer>
         <All>SEE OUR ALL SERVICE</All>
-        <How>HOW IT WORKS</How>
+        <How onClick={()=> setVisible(true)}>HOW IT WORKS</How>
       </ButtContainer>
+
     </Container>
+    {visible?<HowWorks/>:null}
+    </>
   );
 };
 const Container = styled.div`
@@ -45,6 +50,7 @@ const ButtContainer = styled.div`
 display:flex;
 flex-direction:space-between;
 width:25%
+
 `
 const All = styled.button`
   font-size:1rem;
