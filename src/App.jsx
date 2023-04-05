@@ -1,5 +1,5 @@
 import "./App.css";
-import { Layout } from "./components/layout/Layout.jsx";
+import { Layout } from "./componentsLayout/Layout.jsx";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Routes } from "./components/Routes/Routes";
 
