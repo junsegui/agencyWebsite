@@ -6,10 +6,12 @@ export const Navbar = () => {
     <StyledContainer>
       <Sseo>SSEO</Sseo>
       <Nav>
-        <Link>hola</Link>
-        <Link>hola</Link>
-        <Link>hola</Link>
+        <Link>HOME</Link>
+        <Link>ABOUT</Link>
+        <Link>CATEGORIES</Link>
+        <Link>PRICING</Link>
       </Nav>
+      <Contact>CONTACT US</Contact>
     </StyledContainer>
   );
 };
@@ -24,16 +26,27 @@ const StyledContainer = styled.div`
 `;
 const Sseo = styled.p`
   font-weight: 800;
-  font-size: 1.5rem;
-  width: 20%;
+  font-size: 1.2rem;
+  width: auto;
 `;
 const Nav = styled.div`
-  width: 50%;
+  width: 60%;
   height: 100%;
   display: flex;
+  margin-right:0%;
   flex-direction: row;
   background-color: #ffffff;
   justify-content: space-around;
+  margin-left:10%;
   border-radius: 25px;
 `;
 const Link = styled.p``;
+const Contact = styled.button`
+  width:auto;
+  background-color:#FEFF77;
+  margin-left:5%;
+  padding:.8% 1% .8% 1%;
+  border-radius:15px;
+  border:none;
+  cursor:pointer;
+`
